@@ -125,7 +125,7 @@ nav {
 
 footer {
     width: 100vw;
-    height: 20px;
+    height: auto;
     text-align: center;
     position: relative;
     bottom: 0;
