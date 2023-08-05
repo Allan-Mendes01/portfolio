@@ -45,12 +45,28 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid #4ac7f0;
+    transition: ease-in-out 300ms;
+    top: 0;
 }
 
 .logo{
     width: auto;
     height: 80px;
-    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#btnMenu {
+    width: 60px;
+    height: 60px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lin {
+    width: 100%;
+    height: 15%;
+    background-color: #4ac7f0;
 }
 
 .list_nav{
@@ -68,7 +84,7 @@ nav {
     }
 
     .list_nav a:hover {
-        transition: all ease 300ms;
+        transition: all ease-in-out 300ms;
         opacity: 50%;
     }
 
@@ -116,7 +132,7 @@ nav {
 }
 
 .ctt:hover {
-    transition: all ease 300ms;
+    transition: all ease-in-out 300ms;
     background-color: #4ac7f0;
     color: #000e12;
     border: 3px solid #000e12;
@@ -125,9 +141,7 @@ nav {
 
 footer {
     width: 100vw;
-    height: auto;
     text-align: center;
-    position: relative;
     bottom: 0;
     background-color: #4ac7f0;
     color: #000e12;
@@ -136,10 +150,10 @@ footer {
 
 @media screen and (max-width: 770px) {
     nav{
-        flex-direction: column;
         height: auto;
         padding-bottom: 20px;
         padding-top: 20px;
+        justify-content: space-around;
     }
     .logo{
         margin: 0;
@@ -149,11 +163,54 @@ footer {
         height: 1100px;
     }
 
-    footer {
-        margin-bottom: 60px;
-    
+    .list_nav {
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 95vw;
+        height: 100vh;
+        background-color: #000e12;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        left: -200%;
+        transition: all ease-in-out 300ms;
+    }
+
+    #btnMenu {
+        display: flex;
+        opacity: 50%;
+        transition: all ease-in-out 300ms;
+        z-index: 1;
     }
     
+    .one {
+        width: 33%;
+        transition: all ease-in-out 300ms;
+    }
+
+    .two {
+        width: 99%;
+        transition: all ease-in-out 300ms;
+    }
+
+    .three {
+        width: 66%;
+        transition: all ease-in-out 300ms;
+    }
+
+    #btnMenu:hover {
+
+        .one ,.two ,.three {
+            width: 100%;
+        }
+        opacity: 100%;
+    }
+
+    nav {
+        top: 0;
+    }
 }
 
 #projetosPag {
