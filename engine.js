@@ -23,7 +23,7 @@
 
     }
     function handleScrollDown(event) {
-        nav.style.top = "-50px"
+        nav.style.top = "-80px"
         nav.style.position = "fixed"
     }
     

@@ -93,7 +93,16 @@ nav {
     height: auto;
 }
 
-#sec_home {
+.titulos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 2.5;
+    color: #4ac7f0;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+
+#ctt {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,6 +116,7 @@ nav {
     width: 450px;
     height: auto;
     border-radius: 30px 30px 30px 0;
+    margin-bottom: 50px;
 }
 
 .txt {
@@ -128,7 +138,18 @@ nav {
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
-    margin-top: 5px;
+}
+
+.ctt1 {
+    width: 200px;
+    height: 50px;
+    background-color: #000e12;
+    border: 3px solid #4ac7f0;
+    color: #4ac7f0;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    margin-top: 50px;
 }
 
 .ctt:hover {
@@ -159,7 +180,7 @@ footer {
         margin: 0;
     }
 
-    #sec_home {
+    #ctt{
         height: 1100px;
     }
 
