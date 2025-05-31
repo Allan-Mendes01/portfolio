@@ -21,12 +21,9 @@
         nav.style.position = "fixed"
         nav.style.top = ""
 
-        if (lastScrollPosition < 40) {
-            nav.style.position = "relative"
-        }
     }
     function handleScrollDown(event) {
-        nav.style.top = "-50px"
+        nav.style.top = "-80px"
         nav.style.position = "fixed"
     }
     
